@@ -1,0 +1,322 @@
+/*-----------------------------------
+hele siden
+ -----------------------------------*/
+
+body {
+    background-color: lightyellow;
+}
+
+/*-----------------------------------
+h1 Portefølje 4- Data & Web
+-----------------------------------*/
+h1 {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 50px;;
+    font-weight: bold;
+    margin: 0;
+    cursor: pointer;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+
+/*-----------------------------------
+header punkter
+ -----------------------------------*/
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+/*to make the active-tag bold when on that specific page*/
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+/*---------------------------------
+index "om opgaven"
+ -----------------------------------*/
+.image_index {
+    width: 100%;      /* Fylder hele siden i bredden */
+    height: 7cm;      /* 7 centimeter høj */
+    object-fit: cover; /* Sørger for, at billedet ikke strækkes, men beskæres pænt */
+    margin-top: 1cm;
+}
+.index h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.about {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: black;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column; /* stack text vertically */
+    justify-content: center; /* center vertically */
+    align-items: center; /* center horizontally */
+    text-align: center; /* center text alignment */
+    padding: 0 30%;
+
+}
+.about h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: black;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column; /* stack text vertically */
+    justify-content: center; /* center vertically */
+    align-items: center; /* center horizontally */
+    text-align: center; /* center text alignment */
+
+
+}
+
+.about a {
+    color: black;          /* Gør linket sort */
+    font-weight: bold;     /* Gør teksten fed */
+    text-decoration: none; /* Fjerner understregningen */
+}
+
+.about a:hover {
+    color: gray;           /* Skift farve ved hover */
+    text-decoration: underline; /* Eller tilføj understregning igen */
+}
+/*-----------------------------------
+chinook
+-----------------------------------*/
+
+.chinook h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.chinook p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: black;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column; /* stack text vertically */
+    justify-content: center; /* center vertically */
+    align-items: center; /* center horizontally */
+    text-align: center; /* center text alignment */
+    padding: 0 30%;
+
+}
+.chinook h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: black;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column; /* stack text vertically */
+    justify-content: center; /* center vertically */
+    align-items: center; /* center horizontally */
+    text-align: center; /* center text alignment */
+
+
+}
+
+.image_indledende {
+display: flex;
+    height: 200px;
+    justify-content: center;
+}
+
+.image_ER {
+display: flex;
+    height: 1000px;
+    justify-content: center;
+}
+    /*-----------------------------------
+    dataanlyse
+    -----------------------------------*/
+
+.dataanalyse h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.dataanalyse{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: black;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column; /* stack text vertically */
+    justify-content: center; /* center vertically */
+    align-items: center; /* center horizontally */
+    text-align: center; /* center text alignment */
+    padding: 0 30%;
+
+}
+.dataanalyse h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: black;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column; /* stack text vertically */
+    justify-content: center; /* center vertically */
+    align-items: center; /* center horizontally */
+    text-align: center; /* center text alignment */
+
+}
+
+.image_data {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+}
+
+/*-----------------------------------
+visualisering
+ -----------------------------------*/
+
+.visualisering h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.visualisering {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: black;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column; /* stack text vertically */
+    justify-content: center; /* center vertically */
+    align-items: center; /* center horizontally */
+    text-align: center; /* center text alignment */
+    padding: 0 30%;
+
+}
+.visualisering h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: black;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column; /* stack text vertically */
+    justify-content: center; /* center vertically */
+    align-items: center; /* center horizontally */
+    text-align: center; /* center text alignment */
+
+
+}
+
+.chart {
+    width: 30cm;
+    height: 15cm;
+    margin: 0 auto;
+    padding-top: 1cm;
+    padding-bottom: 2cm;
+}
+/*-----------------------------------
+process og konklusion
+ -----------------------------------*/
+
+.process h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.process {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: black;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column; /* stack text vertically */
+    justify-content: center; /* center vertically */
+    align-items: center; /* center horizontally */
+    text-align: center; /* center text alignment */
+    padding: 0 30%;
+
+}
+.process h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: black;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column; /* stack text vertically */
+    justify-content: center; /* center vertically */
+    align-items: center; /* center horizontally */
+    text-align: center; /* center text alignment */
+
+
+}
+
+
+/*-----------------------------------
+footer
+ -----------------------------------*/
+footer {
+    color: grey;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    position: fixed; /* fixes footer relative to the viewport */
+    bottom: 25px; /* aligns to bottom */
+    left: 25px; /* aligns to left */
+    padding: 5px 10px; /* optional: small spacing from edges */
+}
+

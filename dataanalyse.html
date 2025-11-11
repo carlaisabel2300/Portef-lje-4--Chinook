@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portefølje 4</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Mea+Culpa&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<header>
+
+    <!-- h1 Portefølje 4- Data & Web-->
+
+
+    <h1>
+        Portefølje 4- Data & Web
+    </h1>
+
+    <!-- header punkter -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Om Opgaven</a></li>
+            <li><a href="chinook.html">Chinook</a></li>
+            <li><a href="dataanalyse.html" class="active">Dataanalyse</a></li>
+            <li><a href="visualiseringcharts.html">Visualisering & Charts</a></li>
+            <li><a href="processkonklusion.html">Process & Konklusion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="dataanalyse">
+
+    <h3>
+        Dataanalyse
+    </h3>
+
+    <!-- Valg af datasæt  -->
+
+    <h4>
+        Valg af datasæt
+    </h4>
+    <p>
+        Vi har valgt Online Music Store (Chinook) som vores datasæt. Chinook-datasættet repræsenterer en online
+        musikbutik,
+        hvor kunder kan købe musiknumre digitalt. Datasættet indeholder en række tabeller, der hænger sammen og
+        tilsammen
+        dækker hele forretningens struktur. Her findes information om tracks (sange), albums, kunstnere, kunder,
+        fakturaer, playlister, genrer og medietyper. Det giver mulighed for at analysere mange spændende sammenhænge –
+        fx hvilke genrer der sælger bedst, hvilke kunstnere der har flest køb, eller hvilke kunder der bruger mest.
+    </p>
+
+    <!-- formål  -->
+
+    <h4>
+        Formål
+    </h4>
+
+    <p>
+        Formålet med vores indledende analyse er at få et overblik over datasættets struktur og forstå,
+        hvordan de forskellige tabeller relaterer til hinanden. Dette gør det muligt for os at finde et tema,
+        vi kan undersøge nærmere i de næste trin.
+    </p>
+
+
+    <!-- Hvilken genre sælger bedst  -->
+
+    <h4>
+        Hvilken genre sælger bedst?
+    </h4>
+
+    <p>
+        For at finde ud af, hvilken musikgenre der klarer sig bedst i butikken, lavede vi en SQL-forespørgsel, der summerede salget af alle sange og grupperede dem efter genre.
+        <br>
+        Resultatet viste tydeligt, at rock-genren ligger øverst med det højeste samlede salg, efterfulgt af latin og metal.
+        <br>
+        Det viser, at kunderne i musikbutikken generelt foretrækker rockmusik, og at denne genre har størst indflydelse på butikkens samlede omsætning.
+    </p>
+
+    <!--kode  -->
+
+    <div class="image_data">
+        <img src="sales.jpeg" alt="Viser kode der viser hvilken genre der sælger bedst">
+    </div>
+
+    <!-- hvilken kunstner har flest album  -->
+
+    <h4>
+        Hvilken kunstner har flest albums?
+    </h4>
+
+    <p>
+        Vi undersøgte, hvilken kunstner der har udgivet flest albums i Chinook-databasen.
+       <br>
+        Ved hjælp af en SQL-forespørgsel, hvor vi talte antallet af albums pr. artist, fandt vi frem til, at Iron Maiden ligger klart i toppen med 21 albums.
+        <br>
+        De efterfølges af Led Zeppelin og Deep Purple.
+        <br>
+        Analysen viser, at Iron Maiden er en af de mest aktive kunstnere i databasen, hvilket tyder på en stor produktion og muligvis også høj popularitet blandt butikkens kunder.
+
+    </p>
+
+    <!--kode  -->
+    <div class="image_data">
+        <img src="artist.jpeg" alt="Viser kode der viser hvilken kunstner der har solgt flest album">
+    </div>
+
+    <!--  hvilket land har flest kunder -->
+
+    <h4>
+        Hvilket land har flest kunder?
+
+    </h4>
+
+    <p>
+        For at finde ud af, hvor musikbutikkens største kundebase er, lavede vi en SQL-forespørgsel, der tæller antallet af kunder i hvert land.
+        <br>
+        Resultatet viste, at USA har flest registrerede kunder i Chinook-databasen.
+        <br>
+        Det tyder på, at musikbutikkens største marked er i USA, hvor der også er størst aktivitet blandt kunderne.
+        <br>
+        Denne indsigt kan bruges til at målrette markedsføring og kampagner mod det amerikanske marked.
+    </p>
+
+    <!--kode  -->
+
+    <div class="image_data">
+        <img src="country.jpeg" alt="Viser kode der viser hvilket land der har flest kunder">
+    </div>
+
+
+</section>
+
+<!-- footer -->
+<footer>
+    <div>
+        Portefølje 4, Data & Web
+    </div>
+    <div>
+        Gruppe 9, 1. semester, 2025
+    </div>
+</footer>
+</body>
+</html>

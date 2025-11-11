@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portefølje 4</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Mea+Culpa&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<header>
+
+    <!-- h1 Portefølje 4- Data & Web-->
+
+
+    <h1>
+        Portefølje 4- Data & Web
+    </h1>
+
+    <!-- header punkter -->
+    <nav>
+        <ul>
+            <li><a href="index.html" >Om Opgaven</a></li>
+            <li><a href="chinook.html" class="active">Chinook</a></li>
+            <li><a href="dataanalyse.html">Dataanalyse</a></li>
+            <li><a href="visualiseringcharts.html">Visualisering & Charts</a></li>
+            <li><a href="processkonklusion.html">Process & Konklusion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- om Chinook -->
+
+<section class="chinook">
+
+    <h3>
+        Online Music Store (Chinook)
+    </h3>
+
+    <!-- Indledene analyse -->
+
+    <h4>
+    Indledende analyse
+</h4>
+    <p>
+
+    Datasættet chinook består af 11 tabeller med primærnøglerne AlbumID, ArtistID, CustomerID, EmployeeID, GenreID, InvoiceID, InvoiceLineID, MediaTypeID, PlaylistID & TrackID.
+<br>
+        <br>
+        Datasættet indeholder mange Null værdier, specielt under “Customer → company”, ellers også inde under Employee, Invoice og Track.
+        <br>
+        Der er totalt 1.339 NULL-værdier i datasættet.
+        <br>
+        Fremgangsmetoden til at undersøge for NULL-værdier i et datasæt er følgende:
+
+    </p>
+    <div class="image_indledende">
+        <img src="indledenndeanalyse.jpeg" alt="kode der viser hvordan man finder null-værdier">
+    </div>
+    <!-- Om tabellerne  -->
+
+    <h4>
+        Om tabellerne
+    </h4>
+
+<p>
+Tabellen “Album” består af AlbumId (Primary Key), Title & ArtistId (Foreign Key).
+        <br>
+Tabellen “Artist” består af ArtistId (Primary Key) & Name.
+        <br>
+Tabellen “Customer” består af CustomerId (Primary Key), FirstName, LastName, Company, Address, City, State, Country, PostalCode, Phone, Fax, Email & SupportRepId.
+        <br>
+Tabellen “Employee” består af EmployeeId (Primary Key), LastName, FirstName, Title, ReportsTo, BirthDate, HireDate, Address, City, State, Country, PostalCode, Phone, Fax & Email.
+        <br>
+Tabellen “Genre” består af GenreId (Primary Key) & Name.
+        <br>
+Tabellen “Invoice” består af InvoiceId (Primary Key), CustomerId (Foreign Key), InvoiceDate, BillingAddress, BillingCity, BillingState, BillingCountry, BillingPostalCode & Total.
+        <br>
+Tabellen “InvoiceLine” består af InvoiceLineId (Primary Key), InvoiceId (Foreign Key), TrackId (Foreign Key), UnitPrice & Quantity.
+        <br>
+Tabellen “MediaType” består af MediaType (Primary Key) & Name.
+        <br>
+Tabellen “Playlist” består af PlaylistId (Primary Key) & Name.
+        <br>
+Tabellen “PlaylistTrack” består af PlaylistId (Foreign Key) & TrackId (Foreign Key).
+        <br>
+Tabellen “Track” består af TrackId (Primary Key), Name, AlbumId (Foreign Key), MediaTypeId (Foreign Key), GenreId (Foreign Key), Composer, Millisecond, Bytes & UnitPrice.
+    </p>
+
+    <!-- Datakvalitet -->
+
+<h4>
+    Datakvalitet
+</h4>
+
+    <p>
+Under analysen fandt vi flere NULL-værdier, især i kolonnen Customer → Company.
+        <br>
+Det kan påvirke fremtidige analyser, så vi skal eventuelt rense data eller udelade kolonner med mange manglende værdier.
+
+    </p>
+    <!-- ER-Diagram -->
+
+    <h4>
+        ER-diagram
+    </h4>
+
+    <p>
+Her har vi lavet et ER-diagram over Chinook-datasættet, som viser relationerne mellem de forskellige tabeller i databasen. Chinook-databasen illustrerer et musikfirma, der sælger musiknumre, albums og håndterer kunder, fakturaer og medarbejdere.
+<br>
+        Diagrammet viser blandt andet, hvordan Customer og Invoice hænger sammen gennem en én-til-mange-relation, hvor hver kunde kan have flere fakturaer. InvoiceLine viser de enkelte købte tracks på fakturaerne. Derudover ses musikdelen, hvor Artist er forbundet med Album, og Album med Track. Hvert track har en genre og en medietype. Playlist og Track er koblet sammen gennem PlaylistTrack, hvilket gør det muligt at have mange-til-mange-relationer. Til sidst viser relationen mellem Employee og Customer, hvilken medarbejder der betjener hver kunde.
+    </p>
+
+    <div class="image_ER">
+        <img src="ER.jpeg" alt="Viser er-diagram om chinook datasættet">
+    </div>
+
+</section>
+
+<!-- footer -->
+<footer>
+    <div>
+        Portefølje 4, Data & Web
+    </div>
+    <div>
+        Gruppe 9, 1. semester, 2025
+    </div>
+</footer>
+</body>
+</html>

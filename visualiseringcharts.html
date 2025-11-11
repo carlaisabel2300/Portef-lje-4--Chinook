@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portefølje 4</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Google Fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Mea+Culpa&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<header>
+
+    <!-- h1 Portefølje 4- Data & Web-->
+
+
+    <h1>
+        Portefølje 4- Data & Web
+    </h1>
+
+    <!-- header punkter -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Om Opgaven</a></li>
+            <li><a href="chinook.html">Chinook</a></li>
+            <li><a href="dataanalyse.html">Dataanalyse</a></li>
+            <li><a href="visualiseringcharts.html" class="active">Visualisering & Charts</a></li>
+            <li><a href="processkonklusion.html">Process & Konklusion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Indledning- Visualisering og Charts -->
+
+<section class="visualisering">
+
+    <h3> Visualisering og Charts </h3>
+
+    <p>
+        Vi har hentet data direkte fra MySQL-databasen, hvor vi har undersøgt, analyseret og bearbejdet resultaterne. På
+        baggrund af disse analyser har vi oprettet bar charts i Chart.js for at visualisere dataene på en tydelig og
+        overskuelig måde.
+        Vi har valgt bar charts, fordi denne type diagram gør det nemt at sammenligne forskellige kategorier og
+        svarmuligheder. Bar charts giver et klart visuelt overblik over forskelle i mængder eller procentfordelinger, og
+        man kan hurtigt se, hvilke værdier der ligger højest eller lavest.
+        Derudover fungerer bar charts godt, når man arbejder med kategoriske data, som fx svar på spørgsmål eller
+        grupperede resultater, i modsætning til linjediagrammer, der typisk bruges til at vise udviklinger over tid.
+        Denne visualiseringsform gør derfor resultaterne intuitive og lette at fortolke for brugeren.
+        Farverne og layoutet er valgt for at gøre visualiseringen tydelig, moderne og brugervenlig, så resultaterne
+        hurtigt kan aflæses.
+        Vi har lagt vægt på et enkelt og konsistent design, hvor hver farve repræsenterer en specifik kategori, hvilket
+        gør det nemt at skelne mellem svarmulighederne.
+        Lad os nu tage et kig på vores tre bar charts, som hver repræsenterer et af de spørgsmål, vi har analyseret i
+        vores projekt.
+    </p>
+
+    <!-- første spørgsmål- Hvilke genrer sælger bedst?-->
+
+    <h4>Hvilke genrer sælger bedst?</h4>
+
+    <p>
+        Diagrammet er en bar chart, som viser os hvilke musikgenrer der sælger bedst.
+        <br>
+        X-aksen viser de forskellige genrer ( Rock, Latin, Metal, Alternative & Punk, TV Shows, Jazz og Blues).
+        <br>
+        Y-aksen viser det samlede antal salg (Total Sales) for hver genre.
+        <br>
+        Den blå farve repræsenterer værdien “Total Sales”.
+        <br>
+        Ud fra diagrammet kan man se, at Rock-genren har markant flest salg, efterfulgt af Latin og Metal. Genrer som Jazz og Blues ligger lavest og har dermed færrest salg.
+        <br>
+        Formålet med diagrammet er at give et tydeligt visuelt overblik over, hvilke genrer der klarer sig bedst på markedet, og det viser, at Rock er den mest populære genre i datasættet.
+<br>
+        Herunder visualiseret med et bar-chart der sammenligner salg på tværs af genrer.
+    </p>
+
+</section>
+
+<!-- første graf -->
+<main>
+    <div class="chart">
+        <canvas id="chart1" style=" background-color: #fefce8;" alt="Figur 1: bar chart af “Hvilke genrer der sælger bedst”
+"></canvas>
+    </div>
+</main>
+
+<!-- andet spørgsmål- Hvilke kunstnere har udgivet flest albums? -->
+<section class="visualisering">
+
+<h4>
+    Hvilke kunstnere har udgivet flest albums?
+</h4>
+
+<p>
+    Diagrammet her er et bar chart, der viser hvilke kunstnere der har udgivet flest albums.
+    <br>
+    X-aksen repræsenterer kunstnerne (fx Iron Maiden, Led Zeppelin, Deep Purple, Metallica osv.)
+    <br>
+    Y-aksen viser det samlede antal albumudgivelser pr. kunstner
+    <br>
+    Den grønne farve angiver kategorien “Most Album Releases”.
+    <br>
+    Ud fra diagrammet kan man se iron Maiden har udgivet flest albums, efterfulgt af Led Zeppelin og Deep Purple. I den anden ende ligger Pearl jam og Various Artists, som har udgivet færrest albums.
+    <br>
+    Her er formålet med visualiseringen at vise at give et hurtigt overblik over, hvilke kunstnere der har været mest produktive, og dermed illustrere forskelle i udgivelses aktivitet blandt artisterne i datasættet.
+    <br>
+    Visualiseret med et bar-chart, der viser antal albums pr. Artist.
+</p>
+
+</section>
+
+<!-- anden graf -->
+
+<main>
+<div class="chart">
+    <canvas id="chart2" style="background-color: #fefce8;" alt="Figur 2: bar chart af “Hvilke kunstnere der har udgivet flest albums”
+"></canvas>
+</div>
+</main>
+
+<!-- tredje spørgsmål- Hvilke lande har flest kunder? -->
+
+<section class="visualisering">
+
+    <h4>
+        Hvilke lande har flest kunder?
+    </h4>
+
+    <p>
+        Diagrammet på billedet er en bar chart med en start på y-aksen fremfor på x-aksen.
+        <br>
+        X-aksen repræsenterer antal kunder
+        <br>
+        Y-aksen repræsenterer antal
+        <br>
+        Den lavendelblå farve repræsenterer specifikt dette diagram, netop hvilke lande som har flest kunder.
+        <br>
+        Mindsteværdien aflæses øverst som Portugal samt Czech Republic, som hver indeholder 2 kunder. Derimod er den højeste værdi USA, som indeholder 13 kunder.
+        <br>
+        Her er formålet med visualiseringen at give et hurtigt overblik over, hvor de betalende kunder kommer fra.
+        <br>
+        Visualiseret med et bar-chart, der viser fordelingen af kunder per land.
+    </p>
+</section>
+
+<!-- tredje graf -->
+
+<main>
+    <div class="chart">
+        <canvas id="chart3" style="background-color: #fefce8;" alt="Figur 3: Bar-chart af “Hvilke lande der har flest kunder”
+"></canvas>
+    </div>
+</main>
+
+
+<!-- footer -->
+<footer>
+    <div>
+        Portefølje 4, Data & Web
+    </div>
+    <div>
+        Gruppe 9, 1. semester, 2025
+    </div>
+</footer>
+
+<!-- Scripts -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
