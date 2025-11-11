@@ -1,0 +1,27 @@
+[
+  { "Country" : "USA", "Customers" : 13 },
+  { "Country" : "Canada", "Customers" : 8 },
+  { "Country" : "Brazil", "Customers" : 5 },
+  { "Country" : "France", "Customers" : 5 },
+  { "Country" : "Germany", "Customers" : 4 },
+  { "Country" : "United Kingdom", "Customers" : 3 },
+  { "Country" : "Czech Republic", "Customers" : 2 },
+  { "Country" : "Portugal", "Customers" : 2 },
+  { "Country" : "India", "Customers" : 2 },
+  { "Country" : "Norway", "Customers" : 1 },
+  { "Country" : "Austria", "Customers" : 1 },
+  { "Country" : "Belgium", "Customers" : 1 },
+  { "Country" : "Denmark", "Customers" : 1 },
+  { "Country" : "Finland", "Customers" : 1 },
+  { "Country" : "Hungary", "Customers" : 1 },
+  { "Country" : "Ireland", "Customers" : 1 },
+  { "Country" : "Italy", "Customers" : 1 },
+  { "Country" : "Netherlands", "Customers" : 1 },
+  { "Country" : "Poland", "Customers" : 1 },
+  { "Country" : "Spain", "Customers" : 1 },
+  { "Country" : "Sweden", "Customers" : 1 },
+  { "Country" : "Australia", "Customers" : 1 },
+  { "Country" : "Argentina", "Customers" : 1 },
+  { "Country" : "Chile", "Customers" : 1 }
+]
+
